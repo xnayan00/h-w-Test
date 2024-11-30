@@ -76,6 +76,7 @@
               id="carousel__main-image"
               class="carousel__image"
               src="./public/images/product01.webp"
+              loading="lazy"
             />
           </div>
           <div class="carousel__thumbnails">
@@ -85,6 +86,7 @@
                   class="carousel__thumbnail carousel__thumbnail--active"
                   src="./public/images/product01.webp"
                   data-index="0"
+                  loading="lazy"
                 />
               </li>
               <li class="carousel__thumbnail-item">
@@ -92,6 +94,7 @@
                   class="carousel__thumbnail carousel__thumbnail"
                   src="./public/images/product02.webp"
                   data-index="1"
+                  loading="lazy"
                 />
               </li>
               <li class="carousel__thumbnail-item">
@@ -99,6 +102,7 @@
                   class="carousel__thumbnail"
                   src="./public/images/product03.webp"
                   data-index="2"
+                  loading="lazy"
                 />
               </li>
               <li class="carousel__thumbnail-item">
@@ -106,6 +110,7 @@
                   class="carousel__thumbnail"
                   src="./public/images/product04.webp"
                   data-index="3"
+                  loading="lazy"
                 />
               </li>
               <li class="carousel__thumbnail-item">
@@ -113,6 +118,7 @@
                   class="carousel__thumbnail"
                   src="./public/images/product05.webp"
                   data-index="4"
+                  loading="lazy"
                 />
               </li>
             </ul>
@@ -381,7 +387,10 @@
         </footer>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      async
+    ></script>
     <script src="./public/js/formScript.js"></script>
     <script src="./public/js/carrousselScript.js"></script>
     <script src="./public/js/headerScript.js"></script>
