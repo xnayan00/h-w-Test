@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&W Luxury Bag - Single Page</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="form-section" class="form">
+        <h1 class="headline">Exclusivity in every detail</h1>
+        <p class="subtitle">Unveil the Luxury Bag You've Been Waiting For</p>
+
+        <form id="form" class="form__fields" method="GET">
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Type your name here"
+            required
+          />
+
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+
+          <input
+            class="form__input"
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="(99) 99999-9999"
+            maxlength="15"
+            required
+          />
+
+          <button
+            id="submit-button"
+            class="form__button"
+            type="submit"
+            disabled
+          >
+            Continue
+          </button>
+        </form>
+      </section>
+
+      <section id="product-section" class="product">
+        <header id="header" class="header">
+          <div class="header__logo">
+            <img
+              src="./public/images/brand.svg"
+              alt="Logo"
+              class="header__logo-img"
+            />
+          </div>
+          <nav class="header__nav">
+            <p class="header__greeting" id="greeting">Olá Yan Mendes!</p>
+          </nav>
+        </header>
+
+        <section id="carousel-section">
+          <div class="carousel__banner">
+            <img
+              id="carousel__main-image"
+              class="carousel__image"
+              src="./public/images/product01.webp"
+            />
+          </div>
+          <div class="carousel__thumbnails">
+            <ul class="carousel__thumbnail-list">
+              <li class="carousel__thumbnail-item">
+                <img
+                  class="carousel__thumbnail carousel__thumbnail--active"
+                  src="./public/images/product01.webp"
+                  data-index="0"
+                />
+              </li>
+              <li class="carousel__thumbnail-item">
+                <img
+                  class="carousel__thumbnail carousel__thumbnail"
+                  src="./public/images/product02.webp"
+                  data-index="1"
+                />
+              </li>
+              <li class="carousel__thumbnail-item">
+                <img
+                  class="carousel__thumbnail"
+                  src="./public/images/product03.webp"
+                  data-index="2"
+                />
+              </li>
+              <li class="carousel__thumbnail-item">
+                <img
+                  class="carousel__thumbnail"
+                  src="./public/images/product04.webp"
+                  data-index="3"
+                />
+              </li>
+              <li class="carousel__thumbnail-item">
+                <img
+                  class="carousel__thumbnail"
+                  src="./public/images/product05.webp"
+                  data-index="4"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="description-section" class="row description-container">
+          <div class="col-12 col-lg-6 description__content">
+            <h2 class="description__title">H&W Luxury Bag</h2>
+            <p class="description__text">
+              Elevate your style with the H&W Luxury Bag, a timeless accessory
+              crafted for the discerning individual. Made from the finest
+              materials, this elegant piece combines sophisticated design with
+              unparalleled craftsmanship. Its versatile style seamlessly
+              transitions from day to night, making it the perfect addition to
+              any wardrobe. Indulge in luxury with the H&W Luxury Bag – where
+              exclusivity meets elegance.
+            </p>
+            <div class="description__card-container">
+              <div class="description__card">
+                <img
+                  class="description__card-image"
+                  src="./public/images/gem.svg"
+                  alt=""
+                />
+                <div class="description__card-content">
+                  <h6 class="description__card-title">Premium Leather</h6>
+                  <p class="description__card-text">
+                    Crafted from high-quality, durable leather for a luxurious
+                    feel and long-lasting wear.
+                  </p>
+                </div>
+              </div>
+
+              <div class="description__card">
+                <img
+                  class="description__card-image"
+                  src="./public/images/gem.svg"
+                  alt=""
+                />
+                <div class="description__card-content">
+                  <h6 class="description__card-title">Spacious Interior</h6>
+                  <p class="description__card-text">
+                    Designed to hold all your essentials with multiple
+                    compartments for organization.
+                  </p>
+                </div>
+              </div>
+
+              <div class="description__card">
+                <img
+                  class="description__card-image"
+                  src="./public/images/gem.svg"
+                  alt=""
+                />
+                <div class="description__card-content">
+                  <h6 class="description__card-title">Gold-tone Hardware</h6>
+                  <p class="description__card-text">
+                    Finished with elegant gold-tone accents, adding a touch of
+                    refinement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              class="description__image"
+              width="100%"
+              src="./public/images/product04.webp"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section id="gallery-section" class="gallery-container">
+          <h2 class="gallery__title">Gallery</h2>
+          <section class="gallery">
+            <div class="gallery__grid">
+              <figure class="gallery__item" onclick="openLightbox(0)">
+                <img
+                  class="gallery__image"
+                  src="./public/images/product01.webp"
+                />
+              </figure>
+              <figure class="gallery__item" onclick="openLightbox(1)">
+                <img
+                  class="gallery__image"
+                  src="./public/images/product02.webp"
+                />
+              </figure>
+              <figure class="gallery__item" onclick="openLightbox(2)">
+                <img
+                  class="gallery__image"
+                  src="./public/images/product03.webp"
+                />
+              </figure>
+              <figure class="gallery__item" onclick="openLightbox(3)">
+                <img
+                  class="gallery__image"
+                  src="./public/images/product04.webp"
+                />
+              </figure>
+              <figure
+                class="gallery__item gallery__item--extended"
+                onclick="openLightbox(4)"
+              >
+                <img
+                  class="gallery__image"
+                  src="./public/images/product05.webp"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <button class="lightbox__close" aria-label="Fechar Lightbox">
+              &times;
+            </button>
+            <img
+              class="lightbox__image"
+              id="lightbox-image"
+              src=""
+              alt="Visualização da Imagem"
+            />
+          </div>
+
+          <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <button class="lightbox__close" aria-label="Fechar Lightbox">
+              &times;
+            </button>
+            <img
+              class="lightbox__image"
+              id="lightbox-image"
+              src=""
+              alt="Visualização da Imagem"
+            />
+          </div>
+        </section>
+
+        <section id="testimonials-section" class="testimonials">
+          <h2 class="testimonials__title">What Our Customers Are Saying</h2>
+          <div class="testimonials__slider swiper">
+            <div class="swiper-wrapper">
+              <blockquote class="testimonials__item swiper-slide">
+                <p class="testimonials__text">
+                  "The craftsmanship of this handbag is truly exceptional. It's
+                  not just a bag; it's a statement piece that turns heads
+                  everywhere I go!"
+                </p>
+                <footer class="testimonials__author">
+                  - Sarah M., New York
+                </footer>
+              </blockquote>
+              <blockquote class="testimonials__item swiper-slide">
+                <p class="testimonials__text">
+                  "I’ve owned designer bags before, but this one stands out for
+                  its timeless elegance and superior quality. Worth every
+                  penny!"
+                </p>
+                <footer class="testimonials__author">
+                  - Emily R., Los Angeles
+                </footer>
+              </blockquote>
+              <blockquote class="testimonials__item swiper-slide">
+                <p class="testimonials__text">
+                  "The attention to detail is incredible. From the stitching to
+                  the hardware, everything exudes luxury. I feel confident and
+                  stylish carrying it."
+                </p>
+                <footer class="testimonials__author">- Chloe L., London</footer>
+              </blockquote>
+              <blockquote class="testimonials__item swiper-slide">
+                <p class="testimonials__text">
+                  This handbag has exceeded my expectations. It’s both
+                  functional and beautiful, with plenty of room for my
+                  essentials while still looking sleek.
+                </p>
+                <footer class="testimonials__author">
+                  - Olivia P., Sydney
+                </footer>
+              </blockquote>
+              <blockquote class="testimonials__item swiper-slide">
+                <p class="testimonials__text">
+                  "I love how versatile this bag is. Whether I’m at a formal
+                  event or running errands, it elevates my look instantly!"
+                </p>
+                <footer class="testimonials__author">
+                  - Danielle K., Paris
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="testimonials__navigation">
+              <button
+                class="testimonials__button testimonials__button--prev swiper-button-prev"
+                aria-label="Previous"
+              ></button>
+              <button
+                class="testimonials__button testimonials__button--next swiper-button-next"
+                aria-label="Next"
+              ></button>
+            </div>
+
+            <div class="testimonials__pagination swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section id="timer-section">
+          <section class="timer">
+            <h2 class="timer__title">Your Dream Luxury Bag Awaits</h2>
+            <div class="timer__display">
+              <span id="timer" class="timer__time">00:00</span>
+            </div>
+            <button class="timer__cta">Don’t let time slip away!</button>
+          </section>
+        </section>
+
+        <footer id="footer-section" class="footer row">
+          <img width="100" src="./public/images/brand.svg" alt="Logo" />
+          <section class="social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-links__item"
+            >
+              <img
+                src="./public/images/facebook.svg"
+                alt="Facebook"
+                class="social-links__icon"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="social-links__item"
+            >
+              <img
+                src="./public/images/twitter-alt-circle.svg"
+                alt="Twitter"
+                class="social-links__icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-links__item"
+            >
+              <img
+                src="./public/images/instagram.svg"
+                alt="Instagram"
+                class="social-links__icon"
+              />
+            </a>
+          </section>
+          <p class="footer__rights">
+            H&W - 2024 <br />
+            Desenvolvido por <strong>Yan Mendes</strong>
+          </p>
+        </footer>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./public/js/formScript.js"></script>
+    <script src="./public/js/carrousselScript.js"></script>
+    <script src="./public/js/headerScript.js"></script>
+    <script src="./public/js/swiperScript.js"></script>
+    <script src="./public/js/lightboxScript.js"></script>
+    <script src="./public/js/timerScript.js"></script>
+  </body>
+</html>

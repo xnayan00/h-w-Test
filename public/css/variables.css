@@ -1,0 +1,20 @@
+:root {
+  --spacing-1: 1.2rem;
+  --spacing-2: 2rem;
+  --spacing-3: 2.4rem;
+  --spacing-4: 2.8rem;
+
+  --color-primary: #2a0c03;
+  --color-gray-1: #818181;
+  --color-gray-2: #ebebeb;
+  --color-white: #ffffff;
+}
+
+@media screen and (min-width: 1366px) {
+  :root {
+    --spacing-1: 1.8rem;
+    --spacing-2: 2rem;
+    --spacing-3: 3rem;
+    --spacing-4: 4rem;
+  }
+}
